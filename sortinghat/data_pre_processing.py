@@ -1,5 +1,6 @@
 import re
 class DataProcessing():
+    """This Class deals with duplicate data cleanup and data format verification"""
     def data_pre_processing(self,input_data):
         """
             This method does all the pre-processing/cleanup of the data.
