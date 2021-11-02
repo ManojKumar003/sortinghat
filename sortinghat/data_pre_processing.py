@@ -30,7 +30,7 @@ class DataProcessing():
             char = data.split(' ')
             if not re.match('reg', char[0], re.I):  # Checks if 'reg' is given or not
                 raise ValueError("Data format is not correct or reg is missing value:", data)
-            if not re.match("\d{1,4}$", char[1]):  # Checks number of digits of roll number
+            if not re.match("[0-9]{1,4}$", char[1]):  # Checks number of digits of roll number
                 raise ValueError("Data format is not correct for roll number or is missing value:", data)
             if not re.match("A|B", char[2], re.I):  # Checks class of A or B
                 raise ValueError("Data format is not correct for class A|B or is missing value:", data)
